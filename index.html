@@ -7,6 +7,8 @@
 
     <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
     <script src="main.js" defer></script>
+    <script src="extra1.js" defer></script>
+    <script src="extra2.js" defer></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -19,13 +21,23 @@
       <section>
         <form action="">
           <label for="breed">Breed:</label>
-          <input list="breeds" name="breed" id="breed" />
+          <input list="breeds" name="breed" type="text" id="breed" />
           <datalist id="breeds"></datalist>
           <button type="submit" id="findBtn">Find</button>
         </form>
 
         <div id="randomImg"></div>
         <div id="allImages"></div>
+      </section>
+
+      <section>
+        <form action="">
+          <label for="user">Git User:</label>
+          <input name="user" type="text" id="user" />
+          <button type="submit" id="findUserBtn">Find</button>
+        </form>
+
+        <div id="userInfo"></div>
       </section>
     </main>
   </body>
