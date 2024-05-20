@@ -7,6 +7,7 @@
 
     <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
     <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
@@ -17,10 +18,14 @@
 
       <section>
         <form action="">
-          <label for="breed">Breed</label>
+          <label for="breed">Breed:</label>
           <input list="breeds" name="breed" id="breed" />
           <datalist id="breeds"></datalist>
+          <button type="submit" id="findBtn">Find</button>
         </form>
+
+        <div id="randomImg"></div>
+        <div id="allImages"></div>
       </section>
     </main>
   </body>
