@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Axios Exercise</title>
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <main></main>
+    <main>
+      <section>
+        <button id="showUsersBtn">Show Users</button>
+        <div id="usersList"></div>
+      </section>
+
+      <section>
+        <form action="">
+          <label for="breed">Breed</label>
+          <input list="breeds" name="breed" id="breed" />
+          <datalist id="breeds"></datalist>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
